@@ -1,3 +1,5 @@
+Cedric: forking to have it at hand working with python3
+
 ``pypcd``
 =======
 
