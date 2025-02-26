@@ -1,5 +1,7 @@
 Cedric: forking to have it at hand working with python3
 
+Adam: Forking to update 'pointcloud2\_to\_array' function inside 'numpy_pc2.py' to be compatible with Numpy 1.24.4
+
 ``pypcd``
 =======
 

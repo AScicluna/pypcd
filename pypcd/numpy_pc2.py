@@ -130,7 +130,7 @@ def pointcloud2_to_array(cloud_msg, split_rgb=False, remove_padding=True):
     dtype_list = pointcloud2_to_dtype(cloud_msg)
 
     # parse the cloud into an array
-    cloud_arr = np.fromstring(cloud_msg.data, dtype_list)
+    cloud_arr = np.frombuffer(cloud_msg.data, dtype_list)	# Numpy 1.24.4 update: fromstring() is deprecated for this function, using frombuffer() instead
 
     # remove the dummy fields that were added
     if remove_padding:
